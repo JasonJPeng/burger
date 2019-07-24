@@ -1,0 +1,29 @@
+ <div id="fresh">
+ {{#each all}}
+   {{#unless devoured}}
+    <p>
+      {{id}}. {{name}}
+
+      <button data-id="{{id}}" class="devour">Devour It!</button>
+    </p>
+   {{/unless}} 
+  
+  {{/each}}
+
+ </div>
+
+
+
+  <hr>
+  devoured
+  <hr>
+  <div id="devoured">
+  {{#each all}}
+   {{#if devoured}}
+    <p>
+      {{id}}. {{name}}
+    </p>
+   {{/if}} 
+  
+  {{/each}}
+  </div>
