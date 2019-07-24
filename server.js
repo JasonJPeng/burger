@@ -50,7 +50,7 @@ app.get("/", function(req, res) {
   // Post route -> back to home
   app.post("/api/movies", function(req, res) {
     
-    connection.query("INSERT INTO wishes (wish) VALUES (?)", [req.body.wish], function(err, result) {
+    connection.query("INSERT INTO wishes (wish) VALUES (?)", [req.body.id], function(err, result) {
       if (err) throw err;
   
       res.redirect("/");
@@ -58,25 +58,9 @@ app.get("/", function(req, res) {
   });
 
 
-  // Delete a plan
-app.delete("/api/movies/:id", function(req, res) {
-  connection.query("DELETE FROM wishes WHERE id = ?", [req.params.id], function(err, result) {
-    if (err) {
-      // If an error occurred, send a generic server failure
-      return res.status(500).end();
-    }
-    else if (result.affectedRows === 0) {
-      // If no rows were changed, then the ID must not exist, so 404
-      return res.status(404).end();
-    }
-    res.status(200).end();
-
-  });
-});
-  
-// Update a plan
-app.put("/api/movie/:id", function(req, res) {
-  connection.query("UPDATE wishes SET wish = ? WHERE id = ?", [req.body.newMov, req.params.id], function(err, result) {
+// Devour : Update, change devoured to 1
+app.put("/api/devour/:id", function(req, res) {
+  connection.query("UPDATE burgers SET devoured = 1 WHERE id = ?", [req.params.id], function(err, result) {
     if (err) {
       // If an error occurred, send a generic server failure
       return res.status(500).end();
@@ -86,7 +70,6 @@ app.put("/api/movie/:id", function(req, res) {
       return res.status(404).end();
     }
     res.status(200).end();
-
   });
 });
 
