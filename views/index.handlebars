@@ -36,26 +36,3 @@
   </div>
 
   
-
-
-  <script type="text/javascript">
-
-  $(".devour").on("click", function(event) {
-    // Make sure to preventDefault on a submit event.
-    {{!-- event.preventDefault(); --}}
-
-    // Get the ID by finding an element with a "name" attribute equal to the string "id"
-    var id = $(this).attr("data-id");
-
-    // Send the PUT request.
-    $.ajax("/api/devour/" + id, {
-      type: "PUT"
-    }).then(
-      function() {
-        console.log("updated id ", id);
-        // Reload the page to get the updated list
-        location.reload();
-      }
-    );
-  });  
-  </script>
