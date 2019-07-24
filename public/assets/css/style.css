@@ -1,0 +1,27 @@
+body {
+    color: #222222;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size:12pt;
+    background-color: #ffffff; 
+    margin:auto;
+    background-image: url("./img/background-1.png");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#fresh, #devoured, #order {
+    border: 2px solid red;
+    float:left;
+    margin:40px;
+    padding:30px;
+}
+
+#order img {
+    margin:auto;
+}
+
+form * {
+   margin:10px;
+}

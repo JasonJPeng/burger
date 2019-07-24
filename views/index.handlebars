@@ -11,11 +11,19 @@
   {{/each}}
 
  </div>
- 
 
-  <hr>
-  devoured
-  <hr>
+ <div id = "order">
+<img src = "/assets/img/burger.gif" width="200px" >
+<form action="/api/order" method="POST">
+  <label>Order your burger: </label> 
+	<input type="text" name="burger"></input>
+
+	<button type="submit">Order Now</button>    
+</form>
+
+ </div>
+ 
+  
   <div id="devoured">
   {{#each all}}
    {{#if devoured}}
@@ -26,13 +34,8 @@
   
   {{/each}}
   </div>
-<hr>
-  <form action="/api/order" method="POST">
-  Order your burger:
-	<input type="text" name="burger"></input>
 
-	<button type="submit">Order Now</button>    
-</form>
+  
 
 
   <script type="text/javascript">
