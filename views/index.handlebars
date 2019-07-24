@@ -11,8 +11,7 @@
   {{/each}}
 
  </div>
-
-
+ 
 
   <hr>
   devoured
@@ -27,6 +26,14 @@
   
   {{/each}}
   </div>
+<hr>
+  <form action="/api/order" method="POST">
+  Order your burger:
+	<input type="text" name="burger"></input>
+
+	<button type="submit">Order Now</button>    
+</form>
+
 
   <script type="text/javascript">
 
@@ -47,6 +54,5 @@
         location.reload();
       }
     );
-  });
-  
+  });  
   </script>

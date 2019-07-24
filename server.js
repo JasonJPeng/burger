@@ -48,9 +48,9 @@ app.get("/", function(req, res) {
   });
   
   // Post route -> back to home
-  app.post("/api/movies", function(req, res) {
+  app.post("/api/order", function(req, res) {
     
-    connection.query("INSERT INTO wishes (wish) VALUES (?)", [req.body.id], function(err, result) {
+    connection.query("INSERT INTO burgers (name) VALUES (?)", [req.body.burger], function(err, result) {
       if (err) throw err;
   
       res.redirect("/");
