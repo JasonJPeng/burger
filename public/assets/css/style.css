@@ -22,6 +22,12 @@ body {
     margin:auto;
 }
 
+#banner {
+    height: 80px;
+    border: 2px solid red;
+    text-align: center; 
+}
+
 form * {
    margin:10px;
 }
