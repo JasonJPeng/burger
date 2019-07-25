@@ -1,0 +1,15 @@
+https://morning-woodland-68152.herokuapp.com/ | https://git.heroku.com/morning-woodland-68152.git
+
+Connection String
+
+mysql://d087700a13p8rpaf:aea324kvgp02c0k7@etdq12exrvdjisg6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/wrlphh711v9vvsg7
+
+
+You can use your connection information to connect manually through a client such as HeidiSQL to administer your database.
+
+Property	Value	Action
+Host	etdq12exrvdjisg6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	
+Username	d087700a13p8rpaf	
+Password	aea324kvgp02c0k7	
+Port	3306	
+Database	wrlphh711v9vvsg7
