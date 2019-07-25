@@ -1,4 +1,6 @@
-# burger -- Full Stack Web Application with MVC model
+# eat da burger -- Full Stack Web Application with MVC model
+
+![burger](./info/burger-s.gif)
 
 This is a prototype of a Full Stack Web Application with MVC model. The file structure is designed for large production system, including:
 * MySql database with ORM model
@@ -6,6 +8,10 @@ This is a prototype of a Full Stack Web Application with MVC model. The file str
   - express for routing control
   - express-handlebars for dynamic views
 * ajax and JQuery  
+
+
+### Test this program on Heroku Server: 
+### [https://morning-woodland-68152.herokuapp.com/](https://morning-woodland-68152.herokuapp.com/)
 
 ## MVC Model
 
@@ -47,3 +53,5 @@ The file structure is as follows:
          └── xxxx.handlebars  any partial handlebars ( {{< xxxx}})
 
 ```
+
+[Test on Heroku](https://morning-woodland-68152.herokuapp.com/)
