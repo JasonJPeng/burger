@@ -1,8 +1,23 @@
-# burger
+# burger -- Full Stack Web Application with MVC model
+
+This is a prototype of a Full Stack Web Application with MVC model. The file structure is designed for large production system, including:
+* MySql database with ORM model
+* Node.js Server
+  - express for routing control
+  - express-handlebars for dynamic views
+* ajax and JQuery  
+
+## MVC Model
+
+![MVC](./info/MVC.jpg)
+
+----
+
+The file structure is as follows:
 
 ```
 |
-├── config    .............. directory for database 
+├── config    .............. directory for database implementation
 │   ├── connection.js  ..... connect to database(password, database name)
 │   └── orm.js  ............ semi-standard to define create, update, delete, real for the database 
 │                            (the database SQL implemtation is here. SQL commands here  )
