@@ -26,7 +26,7 @@ The file structure is as follows:
 ├── models .................  Define each table's ORM here. database independent implementation
 │   │                         (No SQL commands here. )
 │   └── burgersModel.js   ..  "burgers" table (CRUD)
-├── public   ...............  directory defined as "static" as Apache's "httpd" 
+├── public   ...............  directory defined as "static" as document "root" or "httpd" 
 │   ├── assets
 │   │   ├── css ............  css files for all files
 │   │   │   └── style.css 

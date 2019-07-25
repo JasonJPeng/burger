@@ -2,7 +2,7 @@ body {
     color: #222222;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size:12pt;
-    background-color: #ffffff; 
+    background-color: #eeeeee; 
     margin:auto;
     background-image: url("./img/background-1.png");
 }
@@ -10,12 +10,22 @@ body {
 * {
     box-sizing: border-box;
 }
+.jumbotron {
+    /* border: 2px solid red;  */
+    padding: 10px 10px 10px 50px;
+    margin:0;
+}
 
 #fresh, #devoured, #order {
-    border: 2px solid red;
+    border: 1px solid #888888;
     float:left;
-    margin:40px;
-    padding:30px;
+    margin: 0px 50px 50px 50px;
+    padding:0px 20px 0px 20px;
+    box-shadow: 5px 10px #888888
+}
+
+#fresh h2 , #devoured h2 {
+    font-family: 'Concert One', cursive;
 }
 
 #order img {
@@ -30,4 +40,11 @@ body {
 
 form * {
    margin:10px;
+   display: block;
+}
+
+hr{
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }

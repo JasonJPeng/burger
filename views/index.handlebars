@@ -1,10 +1,13 @@
  <div id="fresh">
+     <h2>Fresh Burgers</h2>
+     <hr>
  {{#each all}}
    {{#unless devoured}}
     <p>
       {{id}}. {{name}}
 
-      <button data-id="{{id}}" class="devour">Devour It!</button>
+      {{!-- <button data-id="{{id}}" class="devour">Devour It!</button> --}}
+      <button  data-id="{{id}}" type="button" class="btn btn-outline-success btn-sm devour">Devour It !</button>
     </p>
    {{/unless}} 
   
@@ -18,13 +21,16 @@
   <label>Order your burger: </label> 
 	<input type="text" name="burger"></input>
 
-	<button type="submit">Order Now</button>    
+	{{!-- <button type="submit">Order Now</button>    --}}
+    <button type="submit" class="btn btn-primary">Order Now</button> 
 </form>
 
  </div>
  
   
   <div id="devoured">
+      <h2>Devoured Burgers</h2>
+      <hr>
   {{#each all}}
    {{#if devoured}}
     <p>
