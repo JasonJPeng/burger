@@ -18,6 +18,12 @@ This is a prototype of a Full Stack Web Application with MVC model. The file str
 ![MVC](./info/MVC.jpg)
 
 ----
+```
+server.js --> [controller] --> [models] 
+                  ↓ ↑            ↓ ↑
+                [views]        [config]
+````
+----
 
 The file structure is as follows:
 
