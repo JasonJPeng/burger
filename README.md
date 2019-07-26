@@ -15,7 +15,7 @@ This is a prototype of a Full Stack Web Application with MVC model. The file str
 
 ## MVC Model
 
-![MVC](./info/MVC.jpg)
+![MVC](./info/mvc-1.jpeg)
 
 ----
 ```
